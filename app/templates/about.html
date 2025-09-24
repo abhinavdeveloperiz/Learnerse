@@ -1,0 +1,243 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+
+<!-- About Us Banner -->
+<section class="relative bg-black text-white">
+    <img src="https://images.unsplash.com/photo-1521737604893-d14cc237f11d?q=80&w=1600&auto=format&fit=crop"
+        alt="About Us Banner" class="absolute inset-0 w-full h-full object-cover opacity-50">
+
+    <div class="relative z-10 max-w-7xl mx-auto px-6 py-24 text-center">
+        <h1 class="text-4xl md:text-5xl font-bold text-gold mb-4">About Us</h1>
+        <nav class="text-sm text-white">
+            <a href="/" class="hover:text-gold transition">Home</a>
+            <span class="mx-2">&gt;</span>
+            <span class="text-gray-200">About</span>
+        </nav>
+    </div>
+</section>
+
+<!-- Your Existing Section -->
+<section class="py-20 bg-gray-50">
+    <div class="max-w-7xl mx-auto px-6 lg:px-8 grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+
+        <!-- Left Images -->
+        <div class="lg:col-span-5 relative flex justify-center lg:justify-start" data-aos="fade-right">
+            <div class="relative z-10">
+                <img src="https://thumbs.dreamstime.com/b/group-college-students-studying-school-library-girl-boy-using-laptop-connecting-to-internet-group-114128547.jpg"
+                    alt="Milestone Achieved" class="rounded-xl shadow-xl w-full object-cover">
+            </div>
+        </div>
+
+        <!-- Right Text -->
+        <div class="lg:col-span-7 space-y-6" data-aos="fade-left">
+            <span class="text-gold bg-gold/20 px-3 py-1 rounded-full text-sm font-semibold">Who We Are</span>
+            <h2 class="text-3xl lg:text-4xl font-bold text-navy">
+                Learn From <span class="text-gold">Industry Experts</span> Across The Globe
+            </h2>
+            <p class="text-gray-600 text-md leading-relaxed text-justify">
+                Established in 2015, learners hub institute has become one of UAE’s premier English language learning
+                centers, enrolling 1500 students annually from different countries.
+                The world has almost become a global village and interaction among the nations is inevitable and the
+                process has already begun. Many programs for development are initiated by the world bodies like the UN,
+                the World Bank, IMF, and others. Consequently, all the more reason to develop the communication skills
+                and grab the chances immediately. Learn English from one of the most experienced language centers.
+            </p>
+
+            <!-- Stats -->
+            <div class="grid grid-cols-2 sm:grid-cols-3 gap-6 mt-6">
+                <div class="flex flex-col items-center sm:items-start text-center sm:text-left">
+                    <div class="text-gold text-3xl mb-1"><i class="fa-solid fa-user-tie"></i></div>
+                    <span class="font-semibold text-navy">10+ Expert Trainers</span>
+                </div>
+                <div class="flex flex-col items-center sm:items-start text-center sm:text-left">
+                    <div class="text-gold text-3xl mb-1"><i class="fa-solid fa-file-lines"></i></div>
+                    <span class="font-semibold text-navy">500+ Specialized Modules</span>
+                </div>
+                <div class="flex flex-col items-center sm:items-start text-center sm:text-left">
+                    <div class="text-gold text-3xl mb-1"><i class="fa-solid fa-graduation-cap"></i></div>
+                    <span class="font-semibold text-navy">1500+ Successful annually</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
+
+<!-- Why Choose Us Section -->
+<section class="relative bg-fixed bg-center bg-cover py-20">
+    <!-- Overlay -->
+    <div class="relative max-w-7xl mx-auto px-6 lg:px-8 text-center text-white">
+        <h2 class="text-3xl lg:text-4xl font-bold mb-4 text-black">Why Choose Us</h2>
+        <p class="text-gray-800 mb-12">
+            Our institute stands out because we combine experience, expertise, and a passion for teaching. Here’s why
+            learners love us.
+        </p>
+
+        <div class="grid grid-cols-2 sm:grid-cols-2 lg:grid-cols-4 gap-8">
+            <!-- Expert Trainers -->
+            <div class="flex flex-col items-center text-center p-6 rounded-xl transition transform transition hover:scale-110">
+                <div class="text-gold text-5xl mb-4 transform transition hover:scale-110">
+                    <i class="fa-solid fa-user-tie"></i>
+                </div>
+                <h3 class="font-semibold text-black text-xl mb-2">Expert Trainers</h3>
+            </div>
+
+            <!-- Flexible Learning -->
+            <div class="flex flex-col items-center text-center p-6 rounded-xl transform transition hover:scale-110">
+                <div class="text-gold text-5xl mb-4 transform transition hover:scale-110">
+                    <i class="fa-solid fa-clock"></i>
+                </div>
+                <h3 class="font-semibold text-black text-xl mb-2">Flexible Learning</h3>
+            </div>
+
+            <!-- Global Recognition -->
+            <div class="flex flex-col items-center text-center p-6 rounded-xl transform transition hover:scale-110">
+                <div class="text-gold text-5xl mb-4 transform transition hover:scale-110">
+                    <i class="fa-solid fa-globe"></i>
+                </div>
+                <h3 class="font-semibold text-black text-xl mb-2">Global Recognition</h3>
+            </div>
+
+            <!-- Proven Results -->
+            <div class="flex flex-col items-center text-center p-6 rounded-xl transform transition hover:scale-110">
+                <div class="text-gold text-5xl mb-4 transform transition hover:scale-110">
+                    <i class="fa-solid fa-graduation-cap"></i>
+                </div>
+                <h3 class="font-semibold text-black text-xl mb-2">Proven Results</h3>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
+
+
+<!-- Mission & Vision Section -->
+<section class="relative bg-fixed bg-center bg-cover py-20"
+    style="background-image: url('https://images.unsplash.com/photo-1508780709619-79562169bc64?auto=format&fit=crop&w=1600&q=80');">
+
+    <!-- Overlay -->
+    <div class="absolute inset-0 bg-black/50"></div>
+
+
+    <div class="max-w-7xl mx-auto px-6 lg:px-8 grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+
+        <!-- Mission -->
+        <div class="bg-white p-8 rounded-xl shadow hover:shadow-lg transition " data-aos="fade-right">
+            <div class="text-gold text-4xl mb-4">
+                <i class="fa-solid fa-bullseye"></i>
+            </div>
+            <h3 class="text-2xl font-bold text-navy mb-4">Our Mission</h3>
+            <p class="text-gray-600 text-md leading-relaxed text-justify">
+                Our mission is to provide high-quality English language education that empowers students from diverse
+                backgrounds to communicate effectively, excel academically, and seize global opportunities. We aim to
+                develop confident learners equipped with practical skills for a rapidly evolving world.
+            </p>
+        </div>
+
+        <!-- Vision -->
+        <div class="bg-white p-8 rounded-xl shadow hover:shadow-lg transition" data-aos="fade-left">
+            <div class="text-gold text-4xl mb-4">
+                <i class="fa-solid fa-eye"></i>
+            </div>
+            <h3 class="text-2xl font-bold text-navy mb-4">Our Vision</h3>
+            <p class="text-gray-600 text-md leading-relaxed text-justify">
+                Our vision is to be recognized as a leading global English language institute that shapes skilled
+                communicators, fosters cultural exchange, and contributes to the growth of individuals and communities
+                worldwide. We envision a future where language is no barrier to opportunity and personal growth.
+            </p>
+        </div>
+
+    </div>
+</section>
+
+<section class="py-20 ">
+    <div class="max-w-7xl mx-auto px-6 lg:px-8 text-center">
+
+        <!-- Section Heading -->
+        <span class="bg-gold/20 text-gold text-sm font-semibold px-4 py-1 rounded-full">
+            Our Qualified People Matter
+        </span>
+        <h2 class="text-3xl lg:text-5xl font-bold text-navy mt-4">
+            Top Class Instructors
+        </h2>
+
+        <!-- Instructors Grid -->
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-10 mt-12">
+
+            <!-- Instructor Card -->
+            <div class="bg-white rounded-2xl overflow-hidden flex flex-col items-center p-6 relative">
+                <div class="bg-gold/20 rounded-b-[100px] w-full flex justify-center">
+                    <img src="https://png.pngtree.com/png-clipart/20240909/original/pngtree-creative-teacher-clipart-for-classroom-use-png-image_15979766.png"
+                        alt="Instructor" class="relative -mb-8 max-h-64 object-cover">
+                </div>
+                <div class="mt-8 text-center">
+                    <p class="text-navy text-sm">German </p>
+                    <h3 class="text-navy font-bold text-xl mt-1">Adithya</h3>
+                </div>
+            </div>
+
+            <!-- Instructor Card -->
+            <div class="bg-white rounded-2xl  overflow-hidden flex flex-col items-center p-6 relative">
+                <div class="bg-gold/20 rounded-b-[100px] w-full flex justify-center">
+                    <img src="https://png.pngtree.com/png-clipart/20250106/original/pngtree-professional-female-teacher-with-notebook-and-pen-png-image_18814556.png"
+                        alt="Instructor" class="relative -mb-8 max-h-64 object-cover">
+                </div>
+                <div class="mt-8 text-center">
+                    <p class="text-navy text-sm">French</p>
+                    <h3 class="text-navy font-bold text-xl mt-1">merry</h3>
+                </div>
+            </div>
+
+            <!-- Instructor Card -->
+            <div class="bg-white rounded-2xl overflow-hidden flex flex-col items-center p-6 relative">
+                <div class="bg-gold/20 rounded-b-[100px] w-full flex justify-center">
+                    <img src="https://www.pngall.com/wp-content/uploads/4/Female-Teacher-Transparent.png"
+                        alt="Instructor" class="relative -mb-8 max-h-64 object-cover">
+                </div>
+                <div class="mt-8 text-center">
+                    <p class="text-navy text-sm">Arabic </p>
+                    <h3 class="text-navy font-bold text-xl mt-1">Baby Rugma</h3>
+                </div>
+            </div>
+
+            <!-- Instructor Card -->
+            <div class="bg-white rounded-2xl overflow-hidden flex flex-col items-center p-6 relative">
+                <div class="bg-gold/20 rounded-b-[100px] w-full flex justify-center">
+                    <img src="https://png.pngtree.com/png-clipart/20231018/original/pngtree-the-teacher-transparent-background-png-image_13354504.png"
+                        alt="Instructor" class="relative -mb-8 max-h-64 object-cover">
+                </div>
+                <div class="mt-8 text-center">
+                    <p class="text-navy text-sm">Spanish</p>
+                    <h3 class="text-navy font-bold text-xl mt-1">Rose</h3>
+                </div>
+            </div>
+
+
+            <div class="bg-white rounded-2xl  overflow-hidden flex flex-col items-center p-6 relative">
+                <div class="bg-gold/20 rounded-b-[100px] w-full flex justify-center">
+                    <img src="https://pngimg.com/d/teacher_PNG84.png" alt="Instructor"
+                        class="relative -mb-8 max-h-64 object-cover">
+                </div>
+                <div class="mt-8 text-center">
+                    <p class="text-navy text-sm">English</p>
+                    <h3 class="text-navy font-bold text-xl mt-1">Shiji</h3>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
+
+
+
+
+
+
+{% endblock %}

@@ -1,0 +1,339 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+
+
+<!-- Hero Section -->
+<section class="relative w-full h-screen bg-fixed bg-cover bg-center "
+    style="background-image: url('https://www.startupdonut.co.uk/sites/default/files/production%20image/languageschool.jpg');">
+
+    <!-- Dark Overlay -->
+    <div class="absolute inset-0 bg-black/60"></div>
+
+    <!-- Content -->
+    <div class="relative z-10 max-w-7xl mx-auto px-6 lg:px-12 h-full flex items-center">
+        <div class="flex flex-col lg:flex-row items-start gap-8 w-full">
+            
+            <!-- Vertical Line Accent -->
+            <div class="hidden lg:block w-1 bg-gold h-40 rounded-full mt-6"></div>
+
+            <!-- Text Content -->
+            <div class="lg:w-1/2 text-left text-white" data-aos="fade-left">
+                <h1 class="text-4xl md:text-6xl font-extrabold leading-tight mb-6">
+                    Welcome to <span class="text-gold">Learners Hub</span>
+                </h1>
+                <p class="text-lg md:text-xl text-gray-200 mb-8">
+                    Empowering learners with knowledge and skills to succeed in their careers and life.
+                </p>
+
+                <!-- Buttons -->
+                <div class="flex flex-wrap gap-4">
+                    <a href="/courses/"
+                        class="px-6 py-3 bg-gold text-navy font-semibold rounded-full shadow-lg hover:bg-navy hover:text-gold transition">
+                        Explore Courses
+                    </a>
+                    <a href="/contact/"
+                        class="px-6 py-3 border-2 border-gold text-gold font-semibold rounded-full hover:bg-gold hover:text-navy transition">
+                        Get in Touch
+                    </a>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+
+
+
+
+
+
+<!-- Courses Section -->
+<section class="py-16 bg-gray-50">
+    <div class="max-w-7xl mx-auto px-6">
+        <!-- Section Heading -->
+        <div class="text-center mb-12" data-aos="fade-up">
+            <h2 class="text-4xl md:text-5xl font-heading font-bold text-navy mb-4">Courses & Programs</h2>
+            <p class="text-gray-600 text-lg md:text-xl leading-relaxed max-w-2xl mx-auto">
+                Choose from a variety of language courses designed to help you succeed in academics, workplace, and
+                daily life.
+            </p>
+        </div>
+
+        <!-- Courses Grid -->
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+
+            <!-- English Language Course Card -->
+            <div class="bg-white shadow-lg rounded-xl overflow-hidden hover:shadow-2xl transition duration-300"
+                data-aos="fade-up">
+                <img src="https://tse2.mm.bing.net/th/id/OIP.sDM3puxVsbhleJJOw_ADDAHaDw?rs=1&pid=ImgDetMain&o=7&rm=3"
+                    alt="English Course" class="w-full h-48 object-cover">
+                <div class="p-6">
+                    <h3 class="text-2xl font-bold text-navy mb-2">English Language</h3>
+                    <p class="text-gray-500 font-semibold mb-2">Duration: 2–3 months per level</p>
+                    <a href="/contact"
+                        class="inline-block px-6 py-3 bg-gold text-navy font-semibold rounded-full hover:bg-navy hover:text-gold transition">
+                        Register Today
+                    </a>
+                </div>
+            </div>
+
+            <!-- Arabic Language Course Card -->
+            <div class="bg-white shadow-lg rounded-xl overflow-hidden hover:shadow-2xl transition duration-300"
+                data-aos="fade-up" data-aos-delay="100">
+                <img src="https://tse4.mm.bing.net/th/id/OIP.4rXuUg3OuHBUbTiWsqVXugHaFE?w=1000&h=684&rs=1&pid=ImgDetMain&o=7&rm=3"
+                    alt="Arabic Course" class="w-full h-48 object-cover">
+                <div class="p-6">
+                    <h3 class="text-2xl font-bold text-navy mb-2">Arabic Language</h3>
+                    <p class="text-gray-500 font-semibold mb-2">Duration: 2–4 months</p>
+                    <a href="/contact"
+                        class="inline-block px-6 py-3 bg-gold text-navy font-semibold rounded-full hover:bg-navy hover:text-gold transition">
+                        Register Today
+                    </a>
+                </div>
+            </div>
+
+            <!-- French Course Card -->
+            <div class="bg-white shadow-lg rounded-xl overflow-hidden hover:shadow-2xl transition duration-300"
+                data-aos="fade-up" data-aos-delay="200">
+                <img src="https://lh3.googleusercontent.com/-vmxAiwHb7hI/VD61X7DGQUI/AAAAAAAAyoA/dpFAqiV9Qskg15VyJuAZdOx8KgfUDBX6gCHM/s540/009.JPG"
+                    alt="French Course" class="w-full h-48 object-cover">
+                <div class="p-6">
+                    <h3 class="text-2xl font-bold text-navy mb-2">French Language</h3>
+                    <p class="text-gray-500 font-semibold mb-2">Duration: 2–3 months per level</p>
+
+                    <a href="/contact"
+                        class="inline-block px-6 py-3 bg-gold text-navy font-semibold rounded-full hover:bg-navy hover:text-gold transition">
+                        Register Today
+                    </a>
+                </div>
+            </div>
+
+            <!-- German Course Card -->
+            <div class="bg-white shadow-lg rounded-xl overflow-hidden hover:shadow-2xl transition duration-300"
+                data-aos="fade-up" data-aos-delay="300">
+                <img src="https://lh3.googleusercontent.com/-v-steqoDR5I/VQb8YtxIpNI/AAAAAAABC9Q/IZEVF_vliCkW_Vl5GYOJSpLT66S487H6wCHM/s540/IMG_4680.JPG"
+                    alt="German Course" class="w-full h-48 object-cover">
+                <div class="p-6">
+                    <h3 class="text-2xl font-bold text-navy mb-2">German Language</h3>
+                    <p class="text-gray-500 font-semibold mb-2">Duration: 2–3 months per level</p>
+
+                    <a href="/contact"
+                        class="inline-block px-6 py-3 bg-gold text-navy font-semibold rounded-full hover:bg-navy hover:text-gold transition">
+                        Register Today
+                    </a>
+                </div>
+            </div>
+
+            <!-- Spanish Course Card -->
+            <div class="bg-white shadow-lg rounded-xl overflow-hidden hover:shadow-2xl transition duration-300"
+                data-aos="fade-up" data-aos-delay="400">
+                <img src="https://lh3.googleusercontent.com/-HFEP9Mcv3dI/T34Ctk2VzKI/AAAAAAAAiLc/yjMU8nefNykxNJ8sjKeMH4ervNsu4m82QCHM/s540/P1000095.JPG"
+                    alt="Spanish Course" class="w-full h-48 object-cover">
+                <div class="p-6">
+                    <h3 class="text-2xl font-bold text-navy mb-2">Spanish Language</h3>
+                    <p class="text-gray-500 font-semibold mb-2">Duration: 2–3 months per level</p>
+
+                    <a href="/contact"
+                        class="inline-block px-6 py-3 bg-gold text-navy font-semibold rounded-full hover:bg-navy hover:text-gold transition">
+                        Register Today
+                    </a>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+</section>
+
+
+
+
+<!-- about  -->
+
+<section class="py-20 bg-gray-50">
+    <div class="max-w-7xl mx-auto px-6 lg:px-8 grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+
+        <!-- Left Images -->
+        <div class="lg:col-span-5 relative flex justify-center lg:justify-start" data-aos="fade-right">
+            <!-- Large Image -->
+            <div class="relative z-10">
+                <img src="https://thumbs.dreamstime.com/b/group-college-students-studying-school-library-girl-boy-using-laptop-connecting-to-internet-group-114128547.jpg"
+                    alt="Milestone Achieved" class="rounded-xl shadow-xl w-full  object-cover">
+            </div>
+
+
+        </div>
+
+        <!-- Right Text -->
+        <div class="lg:col-span-7 space-y-6" data-aos="fade-left">
+            <span class="text-gold bg-gold/20 px-3 py-1 rounded-full text-sm font-semibold">Who We Are</span>
+            <h2 class="text-3xl lg:text-4xl font-bold text-navy">
+                Learn From <span class="text-gold">Industry Experts</span> Across The Globe
+            </h2>
+            <p class="text-gray-600 text-md leading-relaxed text-justify">
+                Established in 2015, learners hub institute has become one of UAE’s premier English language learning
+                centers, enrolling 1500 students annually from different countries.
+                The world has almost become a global village and interaction among the nations is inevitable and the
+                process has already begun. Many programs for development are initiated by the world bodies like the UN,
+                the World Bank, IMF, and others. Consequently, all the more reason to develop the communication skills
+                and grab the chances immediately. Learn English from one of the most experienced language centers.
+
+            </p>
+
+            <!-- Stats -->
+            <div class="grid grid-cols-2 sm:grid-cols-3 gap-6 mt-6">
+                <div class="flex flex-col items-center sm:items-start text-center sm:text-left">
+                    <div class="text-gold text-3xl mb-1"><i class="fa-solid fa-user-tie"></i></div>
+                    <span class="font-semibold text-navy">10+ Expert Trainers</span>
+                </div>
+                <div class="flex flex-col items-center sm:items-start text-center sm:text-left">
+                    <div class="text-gold text-3xl mb-1"><i class="fa-solid fa-file-lines"></i></div>
+                    <span class="font-semibold text-navy">500+ Specialized Modules</span>
+                </div>
+                <div class="flex flex-col items-center sm:items-start text-center sm:text-left">
+                    <div class="text-gold text-3xl mb-1"><i class="fa-solid fa-graduation-cap"></i></div>
+                    <span class="font-semibold text-navy">1500+ Successful annually</span>
+                </div>
+            </div>
+
+            <!-- Call to Action -->
+            <a href="/about/"
+                class="group inline-block mt-8 px-8 py-4 bg-gold text-navy font-semibold rounded-full hover:bg-navy hover:text-gold transition">
+                Learn More
+                <i class="fa-solid fa-arrow-right ml-2 transform transition-all duration-300 group-hover:ml-6"></i>
+            </a>
+        </div>
+    </div>
+</section>
+
+
+
+
+<section class="py-20 ">
+    <div class="max-w-7xl mx-auto px-6 lg:px-8 text-center">
+
+        <!-- Section Heading -->
+        <span class="bg-gold/20 text-gold text-sm font-semibold px-4 py-1 rounded-full">
+            Our Qualified People Matter
+        </span>
+        <h2 class="text-3xl lg:text-5xl font-bold text-navy mt-4">
+            Top Class Instructors
+        </h2>
+
+        <!-- Instructors Grid -->
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-10 mt-12">
+
+            <!-- Instructor Card -->
+            <div class="bg-white rounded-2xl overflow-hidden flex flex-col items-center p-6 relative">
+                <div class="bg-gold/20 rounded-b-[100px] w-full flex justify-center">
+                    <img src="https://png.pngtree.com/png-clipart/20240909/original/pngtree-creative-teacher-clipart-for-classroom-use-png-image_15979766.png"
+                        alt="Instructor" class="relative -mb-8 max-h-64 object-cover">
+                </div>
+                <div class="mt-8 text-center">
+                    <p class="text-navy text-sm">German </p>
+                    <h3 class="text-navy font-bold text-xl mt-1">Adithya</h3>
+                </div>
+            </div>
+
+            <!-- Instructor Card -->
+            <div class="bg-white rounded-2xl  overflow-hidden flex flex-col items-center p-6 relative">
+                <div class="bg-gold/20 rounded-b-[100px] w-full flex justify-center">
+                    <img src="https://png.pngtree.com/png-clipart/20250106/original/pngtree-professional-female-teacher-with-notebook-and-pen-png-image_18814556.png"
+                        alt="Instructor" class="relative -mb-8 max-h-64 object-cover">
+                </div>
+                <div class="mt-8 text-center">
+                    <p class="text-navy text-sm">French</p>
+                    <h3 class="text-navy font-bold text-xl mt-1">merry</h3>
+                </div>
+            </div>
+
+            <!-- Instructor Card -->
+            <div class="bg-white rounded-2xl overflow-hidden flex flex-col items-center p-6 relative">
+                <div class="bg-gold/20 rounded-b-[100px] w-full flex justify-center">
+                    <img src="https://www.pngall.com/wp-content/uploads/4/Female-Teacher-Transparent.png"
+                        alt="Instructor" class="relative -mb-8 max-h-64 object-cover">
+                </div>
+                <div class="mt-8 text-center">
+                    <p class="text-navy text-sm">Arabic </p>
+                    <h3 class="text-navy font-bold text-xl mt-1">Baby Rugma</h3>
+                </div>
+            </div>
+
+            <!-- Instructor Card -->
+            <div class="bg-white rounded-2xl overflow-hidden flex flex-col items-center p-6 relative">
+                <div class="bg-gold/20 rounded-b-[100px] w-full flex justify-center">
+                    <img src="https://png.pngtree.com/png-clipart/20231018/original/pngtree-the-teacher-transparent-background-png-image_13354504.png"
+                        alt="Instructor" class="relative -mb-8 max-h-64 object-cover">
+                </div>
+                <div class="mt-8 text-center">
+                    <p class="text-navy text-sm">Spanish</p>
+                    <h3 class="text-navy font-bold text-xl mt-1">Rose</h3>
+                </div>
+            </div>
+
+
+            <div class="bg-white rounded-2xl  overflow-hidden flex flex-col items-center p-6 relative">
+                <div class="bg-gold/20 rounded-b-[100px] w-full flex justify-center">
+                    <img src="https://pngimg.com/d/teacher_PNG84.png" alt="Instructor"
+                        class="relative -mb-8 max-h-64 object-cover">
+                </div>
+                <div class="mt-8 text-center">
+                    <p class="text-navy text-sm">English</p>
+                    <h3 class="text-navy font-bold text-xl mt-1">Shiji</h3>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
+
+<section class="relative bg-fixed bg-center bg-cover">
+    <!-- Overlay -->
+    <div class="relative max-w-7xl mx-auto px-6 lg:px-8 text-center text-white">
+        <h2 class="text-3xl lg:text-4xl font-bold mb-4 text-black">Why Choose Us</h2>
+        <p class="text-gray-800 mb-12">
+            Our institute stands out because we combine experience, expertise, and a passion for teaching. Here’s why
+            learners love us.
+        </p>
+
+        <div class="grid grid-cols-2 sm:grid-cols-2 lg:grid-cols-4 gap-8">
+            <!-- Expert Trainers -->
+            <div class="flex flex-col items-center text-center p-6 rounded-xl transition transform transition hover:scale-110">
+                <div class="text-gold text-5xl mb-4 transform transition hover:scale-110">
+                    <i class="fa-solid fa-user-tie"></i>
+                </div>
+                <h3 class="font-semibold text-black text-xl mb-2">Expert Trainers</h3>
+            </div>
+
+            <!-- Flexible Learning -->
+            <div class="flex flex-col items-center text-center p-6 rounded-xl transform transition hover:scale-110">
+                <div class="text-gold text-5xl mb-4 transform transition hover:scale-110">
+                    <i class="fa-solid fa-clock"></i>
+                </div>
+                <h3 class="font-semibold text-black text-xl mb-2">Flexible Learning</h3>
+            </div>
+
+            <!-- Global Recognition -->
+            <div class="flex flex-col items-center text-center p-6 rounded-xl transform transition hover:scale-110">
+                <div class="text-gold text-5xl mb-4 transform transition hover:scale-110">
+                    <i class="fa-solid fa-globe"></i>
+                </div>
+                <h3 class="font-semibold text-black text-xl mb-2">Global Recognition</h3>
+            </div>
+
+            <!-- Proven Results -->
+            <div class="flex flex-col items-center text-center p-6 rounded-xl transform transition hover:scale-110">
+                <div class="text-gold text-5xl mb-4 transform transition hover:scale-110">
+                    <i class="fa-solid fa-graduation-cap"></i>
+                </div>
+                <h3 class="font-semibold text-black text-xl mb-2">Proven Results</h3>
+            </div>
+        </div>
+    </div>
+</section>
+
+{% endblock %}
