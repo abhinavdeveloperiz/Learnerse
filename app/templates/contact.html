@@ -1,0 +1,116 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+
+<!-- Contact Banner -->
+<section class="relative bg-black text-white">
+  <img src="https://images.unsplash.com/photo-1521737604893-d14cc237f11d?q=80&w=1600&auto=format&fit=crop"
+    alt="Contact Banner" class="absolute inset-0 w-full h-full object-cover opacity-50">
+
+  <div class="relative z-10 max-w-7xl mx-auto px-6 py-24 text-center">
+    <h1 class="text-4xl md:text-5xl font-bold text-gold mb-4">Contact Us</h1>
+    <nav class="text-sm text-gray-200">
+      <a href="/" class="hover:text-gold transition">Home</a>
+      <span class="mx-2">&gt;</span>
+      <span>Contact</span>
+    </nav>
+  </div>
+</section>
+
+<!-- Contact Section -->
+<section class=" py-20">
+  <div class="max-w-7xl mx-auto px-6 lg:px-12 grid lg:grid-cols-2 gap-12 items-center">
+    
+    <!-- Contact Form -->
+    <div data-aos="fade-right">
+      <h2 class="text-3xl font-bold text-gold mb-8 text-center lg:text-left">Send Us a Message</h2>
+      <form id="contactForm" class="bg-white p-8 rounded-2xl shadow-xl space-y-6">
+        <div>
+          <label class="block text-navy font-semibold mb-2">Name</label>
+          <input type="text" id="name" required
+            class="w-full border border-gray-300 rounded-lg px-4 py-2 focus:ring-2 focus:ring-gold outline-none" />
+        </div>
+      
+        <div>
+          <label class="block text-navy font-semibold mb-2">Phone</label>
+          <input type="text" id="phone" required
+            class="w-full border border-gray-300 rounded-lg px-4 py-2 focus:ring-2 focus:ring-gold outline-none" />
+        </div>
+        <div>
+          <label class="block text-navy font-semibold mb-2">Message</label>
+          <textarea id="message" rows="4" required
+            class="w-full border border-gray-300 rounded-lg px-4 py-2 focus:ring-2 focus:ring-gold outline-none"></textarea>
+        </div>
+        <button type="submit"
+          class="w-full bg-gold text-navy font-bold py-3 rounded-lg hover:bg-yellow-500 transition">
+          Send via WhatsApp
+        </button>
+      </form>
+    </div>
+
+    <!-- Contact Info -->
+    <div class="space-y-6" data-aos="fade-left">
+      <div class="flex items-start gap-4 p-6 bg-white rounded-xl shadow-lg hover:shadow-2xl transition">
+        <i class="fa-solid fa-location-dot text-gold text-3xl"></i>
+        <div>
+          <h3 class="text-lg font-semibold text-navy">Address</h3>
+          <p class="text-gray-700">123 Learners Street,<br> City, Country</p>
+        </div>
+      </div>
+
+      <div class="flex items-start gap-4 p-6 bg-white rounded-xl shadow-lg hover:shadow-2xl transition">
+        <i class="fa-solid fa-phone text-gold text-3xl"></i>
+        <div>
+          <h3 class="text-lg font-semibold text-navy">Phone</h3>
+          <p class="text-gray-700">+91 98765 43210</p>
+        </div>
+      </div>
+
+      <div class="flex items-start gap-4 p-6 bg-white rounded-xl shadow-lg hover:shadow-2xl transition">
+        <i class="fa-solid fa-envelope text-gold text-3xl"></i>
+        <div>
+          <h3 class="text-lg font-semibold text-navy">Email</h3>
+          <p class="text-gray-700">info@learnershub.com</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Google Map -->
+  <div class="rounded-2xl overflow-hidden shadow-2xl border-4 border-white">
+    <iframe
+      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3746.9463247959893!2d76.6018202747788!3d8.880256091175232!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3b05fdb97250aad5%3A0xbff685223bfa38ea!2sInspireZest%20Technologies%20Pvt%20Ltd!5e1!3m2!1sen!2sin!4v1758691579782!5m2!1sen!2sin"
+      width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+      referrerpolicy="no-referrer-when-downgrade"></iframe>
+  </div>
+
+<!-- WhatsApp Script -->
+<script>
+document.getElementById("contactForm").addEventListener("submit", function (e) {
+  e.preventDefault();
+
+  const name = document.getElementById("name").value;
+  const phone = document.getElementById("phone").value;
+  const message = document.getElementById("message").value;
+
+  const whatsappMessage = `Hello, my name is ${name}.
+Phone: ${phone}
+Message: ${message}`;
+
+  const phoneNumber = "919207773847"; // Your number with country code
+  const encodedMessage = encodeURIComponent(whatsappMessage);
+
+  // Detect device
+  const isMobile = /iPhone|iPad|iPod|Android/i.test(navigator.userAgent);
+
+  const url = isMobile
+    ? `https://wa.me/${phoneNumber}?text=${encodedMessage}`
+    : `https://web.whatsapp.com/send?phone=${phoneNumber}&text=${encodedMessage}`;
+
+  window.open(url, "_blank");
+});
+</script>
+
+
+{% endblock %}
