@@ -4,7 +4,8 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
     <title>Learners Hub</title>
 
     <!-- Tailwind CSS -->
@@ -18,6 +19,7 @@
                         navy: "#1A2A57",
                     },
                 },
+                
             },
         };
     </script>
@@ -138,6 +140,21 @@
 </script>
 
 
+
+<div class="fixed bottom-5 right-5 flex flex-col gap-3 z-50">
+  <!-- Call Button -->
+  <a href="tel:+971529608514"
+     class="bg-gold text-navy w-12 h-12 animate-bounce flex items-center justify-center rounded-full shadow-lg hover:scale-110 transition">
+    <i class="fas fa-phone-alt text-lg"></i>
+  </a>
+  <!-- WhatsApp Button -->
+  <a href="https://wa.me/+97156667157" target="_blank"
+     class="bg-gold text-green-300 animate-bounce w-12 h-12 flex items-center justify-center rounded-full shadow-lg hover:scale-110 transition">
+    <i class="fab fa-whatsapp text-xl"></i>
+  </a>
+</div>
+
+
 <body class="font-sans antialiased">
 
     <!-- Navbar -->
@@ -194,7 +211,8 @@
                     <img src="{% static 'image/logo.jpg' %}" alt="Learners Hub" class="h-14">
                 </a>
                 <p class="text-gray-600 text-sm leading-relaxed">
-                    Empowering learners with knowledge and skills to succeed in their careers and life.
+                    Established in 2015, Learners Hub Institute has grown into one of UAE’s premier English language
+                    centers, enrolling 1500+ students annually from across the globe.
                 </p>
 
                 <!-- Social Icons -->
@@ -237,12 +255,14 @@
                 <h3 class="text-gold font-bold mb-4">Contact</h3>
                 <p class="text-gray-600 text-sm flex items-center gap-3 justify-center md:justify-start">
                     <i class="fa-solid fa-location-dot text-gold"></i>
-                    <span>123 Main Street, City, India</span>
+                    <span>ADCP Tower-D - 1304 - Electra Street - behind City Seasons Hotel - Al Danah - Zone 1 - Abu
+                        Dhabi - United Arab Emirates</span>
                 </p>
-                <p class="text-gray-600 text-sm flex items-center gap-3 justify-center md:justify-start mt-2">
+                <a href="tel:+971529608514"
+                    class="text-gray-600 text-sm flex items-center gap-3 justify-center md:justify-start mt-2">
                     <i class="fa-solid fa-phone text-gold"></i>
-                    <span>+91 9876543210</span>
-                </p>
+                    <span>+91 +971 52 960 8514</span>
+                </a>
                 <p class="text-gray-600 text-sm flex items-center gap-3 justify-center md:justify-start mt-2">
                     <i class="fa-solid fa-envelope text-gold"></i>
                     <span>info@learnershub.com</span>
